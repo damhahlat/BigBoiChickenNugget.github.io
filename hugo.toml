@@ -16,17 +16,16 @@ description = "A Tech Blog"
 # Appearance settings
 theme = 'dark'
 colorPalette = 'default'
-hideHeader = false
+hideHeader = true
 
 # Intro on main page, content is markdown
-homeIntroTitle = 'Hi!'
+homeIntroTitle = 'Inventor, Musician, Engineer'
 homeIntroContent = """
-My name is Talha, and I'm a 2nd year mechatronics engineering student at McMaster University. I enjoy building projects, making music, and reading.
-This site is a collection of my thoughts and projects. I hope you find something interesting here! To contact me, please reach out to me through any of my socials posted.
+I'm a mechtronics engineering student who enjoys making projects and composing music. To learn more about my background please read my [about page](/about) and check me out on [LinkedIn](https://www.linkedin.com/in/talha-a-ahmad/). This site is where I showcase my projects as well as my occasional thoughts on various topics.
 """
 
 # Collection to display on home
-homeCollectionTitle = 'My Most Recent Thoughts'
+homeCollectionTitle = 'Recent Musings'
 homeCollection = 'posts'
 
 # Lists parameters
@@ -35,7 +34,7 @@ listSummaries = true
 listDateFormat = '2 Jan 2006'
 
 # Breadcrumbs
-breadcrumbs = false
+breadcrumbs = true
 
 # Social icons
 [[params.social]]

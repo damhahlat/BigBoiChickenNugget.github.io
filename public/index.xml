@@ -6,21 +6,21 @@
     <description>Recent content in Home on Talha Ahmad</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Jul 2024 22:35:21 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First Post</title>
-      <link>http://localhost:1313/posts/first-post/</link>
-      <pubDate>Wed, 03 Jul 2024 22:35:21 -0400</pubDate>
-      <guid>http://localhost:1313/posts/first-post/</guid>
-      <description>First post Hello and welcome. I look forward to writing stuff.</description>
+      <title>Technological Elitism is Killing the Linux Community</title>
+      <link>http://localhost:1313/posts/technological-elitism/</link>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/technological-elitism/</guid>
+      <description>I have a confession to make. I was an elitist when it came to technology. I used to judge individuals for their Apple devices and usage of proprietary programs. Obviously, while I still hold strong opinions on these products as a whole, I have come to understand that for most individuals it simply doesn&amp;rsquo;t matter. As long as a tool works the way they want it to for their specific purpose, they are happy.</description>
     </item>
     <item>
-      <title>About</title>
+      <title></title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>A work in progress</description>
+      <description>Essential gist Hi! I&amp;rsquo;m a second year mechatronics engineering student at McMaster University. At the moment, I&amp;rsquo;m working as an embedded systems software developer at Taylor Systems. I&amp;rsquo;m passionate about robotics, embedded systems, and software development. I&amp;rsquo;m always looking for new opportunities to learn and grow. To contact me, simply shoot me an email at talha05ahmad@gmail.com.&#xA;Areas of specialty The skills that I have actively developed in applied through projects and / or work experience include:</description>
     </item>
   </channel>
 </rss>

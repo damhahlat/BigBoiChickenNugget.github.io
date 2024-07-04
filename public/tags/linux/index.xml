@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Talha Ahmad</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Talha Ahmad</description>
+    <title>Linux on Talha Ahmad</title>
+    <link>http://localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on Talha Ahmad</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Technological Elitism is Killing the Linux Community</title>
       <link>http://localhost:1313/posts/technological-elitism/</link>
