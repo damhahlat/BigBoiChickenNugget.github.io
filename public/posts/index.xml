@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Talha Ahmad</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Talha Ahmad</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Jul 2024 22:35:21 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Post</title>
+      <link>http://localhost:1313/posts/first-post/</link>
+      <pubDate>Wed, 03 Jul 2024 22:35:21 -0400</pubDate>
+      <guid>http://localhost:1313/posts/first-post/</guid>
+      <description>First post Hello and welcome. I look forward to writing stuff.</description>
+    </item>
+  </channel>
+</rss>

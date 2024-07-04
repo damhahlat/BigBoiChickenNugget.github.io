@@ -1,0 +1,75 @@
+baseURL = 'https://bigboichickennugget.github.io/'
+languageCode = 'en-us'
+title = 'Talha Ahmad'
+theme = 'typo'
+
+[taxonomies]
+tag = 'tags'
+
+# Google analytics code
+googleAnalytics = "G-xxxxxxxxx"
+
+[params]
+# Meta description
+description = "A Tech Blog"
+
+# Appearance settings
+theme = 'dark'
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content is markdown
+homeIntroTitle = 'Hi!'
+homeIntroContent = """
+My name is Talha, and I'm a 2nd year mechatronics engineering student at McMaster University. I enjoy building projects, making music, and reading.
+This site is a collection of my thoughts and projects. I hope you find something interesting here! To contact me, please reach out to me through any of my socials posted.
+"""
+
+# Collection to display on home
+homeCollectionTitle = 'My Most Recent Thoughts'
+homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '2 Jan 2006'
+
+# Breadcrumbs
+breadcrumbs = false
+
+# Social icons
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/talha-a-ahmad/"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/bigboichickennugget"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+[[params.menu]]
+name = "about"
+url = "/about"
+
+# Syntax highligth on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+# Giscus comments
+[params.giscus]
+enable = false
+repo = "user/repo"
+repoid = "repoId"
+category = "General"
+categoryid = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"
