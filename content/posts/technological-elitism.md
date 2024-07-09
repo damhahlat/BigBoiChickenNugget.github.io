@@ -1,7 +1,7 @@
 +++
 title = 'Technological Elitism is Killing the Linux Community'
 date = 2024-07-03
-draft = false
+draft = true
 hideBacktoTop = true
 tags = ["Linux", "Technology", "Opinion"]
 showTags = true

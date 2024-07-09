@@ -1,7 +1,7 @@
 +++
 title = 'A Critique of the Suckless Community and Software'
 date = 2024-07-04
-draft = false
+draft = true
 tags = ["opinion", "software"]
 showTags = true
 +++

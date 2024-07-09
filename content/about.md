@@ -7,9 +7,9 @@ hideBackToTop = true
 ##### Essential gist
 Hi! I'm a second year mechatronics engineering student at McMaster University. At the moment, I'm working as an embedded systems software developer at Taylor Systems. I'm passionate about robotics, embedded systems, and software development. I'm always looking for new opportunities to learn and grow. To contact me, simply shoot me an email at [talha05ahmad@gmail.com](mailto:talha05ahmad@gmail.com).
 ##### Areas of specialty
-The skills that I have actively developed in applied through projects and / or work experience include:
+The skills that I have actively developed and applied through projects and / or work experience include:
 - Software Development: Python, C, C++, some web development
-- Embedded Systems: STM32, Arduino, Raspberry Pi
+- Embedded Systems: STM32, Arduino, Raspberry Pi, ESP32
 - Version Control: Git
 
 ##### Current Daily Driver
