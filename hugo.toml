@@ -11,7 +11,7 @@ googleAnalytics = "G-xxxxxxxxx"
 
 [params]
 # Meta description
-description = "A Tech Blog"
+description = "Talha Ahmad personal website"
 
 # Appearance settings
 theme = 'dark'
@@ -19,7 +19,7 @@ colorPalette = 'default'
 hideHeader = true
 
 # Intro on main page, content is markdown
-homeIntroTitle = 'Inventor, Musician, Engineer'
+homeIntroTitle = 'Engineering Student and Artist'
 homeIntroContent = """
 I'm a mechtronics engineering student who enjoys making projects and composing music. To learn more about my background please read my [about page](/about) and check me out on [LinkedIn](https://www.linkedin.com/in/talha-a-ahmad/). This site is where I showcase my projects as well as my occasional thoughts on various topics.
 """
