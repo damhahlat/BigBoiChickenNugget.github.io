@@ -15,6 +15,6 @@ The skills that I have actively developed and applied through projects and / or 
 
 ##### Dots
 My setup is always undergoing changes, but at the moment the main softwares I use on a day to day basis are Arch Linux, Sway,
-Waybar, Tmux, Neovim, and Alacritty. You can check out my (dotfiles)[https://github.com/BigBoiChickenNugget/dotfiles]
+Waybar, Tmux, Neovim, and Alacritty. You can check out my [dotfiles](https://github.com/BigBoiChickenNugget/dotfiles)
 if you want to steal my config (I already stole a lot of it so I have no right to judge).
 
