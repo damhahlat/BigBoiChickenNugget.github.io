@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Talha Ahmad</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Home on Talha Ahmad</description>
+    <title>Projects on Talha Ahmad</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Talha Ahmad</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wheelchair Phone Charger</title>
       <link>http://localhost:1313/projects/wheelchair-phone-charger/</link>
       <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/wheelchair-phone-charger/</guid>
       <description>For my freshman year final engineering design project at McMaster University, I worked in a team of 4 individuals to design and create a design that would help a client assigned to us by the university. Our client was a young individual diagnosed with spina bifida, a condition that inhibits the development of the spinal cord and causes paralysis in the lower body. Our client used a wheelchair to move around and mentioned that they had difficulty charging their phone due to the location of charging ports.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>Essential Gist Hi! I&amp;rsquo;m a second year mechatronics engineering student at McMaster University. At the moment, I&amp;rsquo;m working as a software developer at Taylor Systems. I&amp;rsquo;m passionate about robotics, embedded systems, and software development. I&amp;rsquo;m always looking for new opportunities to learn and grow. To contact me, simply shoot me an email at talha05ahmad@gmail.com.&#xA;Areas of specialty The skills that I have actively developed and applied through projects and / or work experience include:</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  dir="ltr">
+
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width"><meta name="description" content="" />
+
+<title>
+    
+    Wheelchair Phone Charger | Talha Ahmad
+    
+</title>
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.06be76fa25e4ecb4d473373b74760273efe3314b6eb608effa9c2b6a617d92e2.css" media="all">
+
+
+
+  </head>
+
+  
+
+  
+  
+  
+
+  <body class="dark">
+
+    <div class="content">
+      <header>
+        
+
+<div class="header">
+
+    
+
+</div>
+      </header>
+
+      <main class="main">
+        
+
+
+
+
+<div class="breadcrumbs">
+    
+    <a href="/">Home</a>
+    <span class="breadcrumbs-separator"> > </span>
+    
+    <a href="/projects/">Projects</a>
+    <span class="breadcrumbs-separator"> > </span>
+    
+    <a class="breadcrumbs-current" href="/projects/wheelchair-phone-charger/">Wheelchair Phone Charger</a>
+</div>
+
+
+<div >
+
+  <div class="single-intro-container">
+
+    
+
+    <h1 class="single-title">Wheelchair Phone Charger</h1>
+    
+
+    
+
+    <p class="single-readtime">
+      
+      
+      
+      <time datetime="2021-06-01T00:00:00&#43;00:00">June 1, 2021</time>
+      
+
+      
+    </p>
+
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div class="single-content">
+    <p>For my freshman year final engineering design project at McMaster University, I worked in a team of 4 individuals
+to design and create a design that would help a client assigned to us by the university. Our client was a young individual
+diagnosed with spina bifida, a condition that inhibits the development of the spinal cord and causes paralysis in the lower body.
+Our client used a wheelchair to move around and mentioned that they had difficulty charging their phone due to the location of
+charging ports. Most charging ports tend to be in lower locations, making it difficult for our client to reach them without assistance.</p>
+<p>Our group decided to focus on this problem specifically and designed a tool that would allow our client to charge their phone more
+often without needing to rely on charging ports. The fundamental idea was to have some type of storage container that could be attached
+to the wheelchair. This container would hold a power bank with wireless charging capabilities. The idea was that this power bank could
+be charged whenever our client has access to charging ports, such as at home. Then, whenever our client was out and about, they could
+simply place their phone inside the container which would both keep the phone safe from weather conditions and charge it at the same time.</p>
+<p>Our first task, after discussing what we wanted to do, was to create a design. We created multiple different designs out of cardboard and such,
+but decided that the final design should be a hardshell case that has a lid and is horizontally oriented. This design would allow our client
+to easily place their phone inside the container and close the lid to keep it safe. The container would be attached to the wheelchair using
+a belt that could be adjusted to fit the size of the wheelchair. The container itself would be split into two parts: one to house the power bank
+and the other to house the phone. Our CAD model of the design can be seen below:</p>
+<figure><img src="/images/wheelchair-charger-CAD.png" width="500"><figcaption>
+      <h4>Wheelchair Charger CAD Model</h4>
+    </figcaption>
+</figure>
+
+<p>The next step after this was to take this design and actually 3D print it. We used a hot glue gun to attach the plastic components of the lid together
+and we used a random belt for the belt attachment. The final product can be seen below:</p>
+<figure><img src="/images/wheelchair-charger-model.png" width="300"><figcaption>
+      <h4>3D Printed Wheelchair Charger</h4>
+    </figcaption>
+</figure>
+
+<p>Overall, a pretty fun project, and we got a good grade too, so I&rsquo;ll take it. That being said, this project didn&rsquo;t align too well with my interests
+that are primarily centered around software and embedded systems which caused me to not be as passionate about this project as I could have been.
+Regardless, this project opened my eyes and gave me a good introduction to engineering as a profession.</p>
+
+    
+  </div>
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+      </main>
+    </div>
+
+  </body>
+
+  <script>
+
+  function isAuto() {
+    return document.body.classList.contains("auto");
+  }
+
+  function setTheme() {
+    if (!isAuto()) {
+      return
+    }
+
+    document.body.classList.remove("auto");
+    let cls = "light";
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      cls = "dark";
+    }
+
+    document.body.classList.add(cls);
+  }
+
+  function invertBody() {
+    document.body.classList.toggle("dark");
+    document.body.classList.toggle("light");
+  }
+
+  if (isAuto()) {
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(invertBody);
+  }
+
+  setTheme();
+
+</script>
+
+</html>

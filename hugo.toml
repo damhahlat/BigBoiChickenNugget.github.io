@@ -25,8 +25,8 @@ I'm a mechtronics engineering student who enjoys making projects and composing m
 """
 
 # Collection to display on home
-homeCollectionTitle = 'Recent Musings'
-homeCollection = 'posts'
+# homeCollectionTitle = 'Recent Musings'
+# homeCollection = 'projects'
 
 # Lists parameters
 paginationSize = 100
@@ -51,8 +51,8 @@ name = "home"
 url = "/"
 
 [[params.menu]]
-name = "posts"
-url = "/posts"
+name = "projects"
+url = "/projects"
 
 [[params.menu]]
 name = "about"

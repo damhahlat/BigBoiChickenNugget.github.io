@@ -1,7 +1,7 @@
 +++
 title = 'Perfect Human'
 date = 2024-07-16
-draft = false
+draft = true
 +++
 ### On Perfection and Humanity
 Quite recently, I've been going through my old journals and trying to sift through a lot of the foolish ideas I had as a child.
