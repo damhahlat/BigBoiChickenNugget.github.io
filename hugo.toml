@@ -19,9 +19,9 @@ colorPalette = 'default'
 hideHeader = true
 
 # Intro on main page, content is markdown
-homeIntroTitle = 'Engineering Student and Artist'
+homeIntroTitle = 'Musician who Sometimes Builds Things'
 homeIntroContent = """
-I'm a mechtronics engineering student who enjoys making projects and composing music. To learn more about my background please read my [about page](/about) and check me out on [LinkedIn](https://www.linkedin.com/in/talha-a-ahmad/). This site is where I showcase my projects as well as my occasional thoughts on various topics.
+I'm a mechtronics engineering student who enjoys making projects and composing music. To learn more about my background please read my [about page](/about) and check me out on [LinkedIn](https://www.linkedin.com/in/talha-a-ahmad/). This site is where I plan on showcasing my projects as well as all my socials so you can follow me on my journey.
 """
 
 # Collection to display on home
