@@ -19,4 +19,4 @@ Waybar, Tmux, Neovim, and Alacritty. You can check out my [dotfiles](https://git
 if you want to steal my config (I already stole a lot of it so I have no right to judge).
 
 ##### Music
-I sometiimes like to make low quality guitar videos on YouTube when I have free time (which is not very often) that you can find here: [Average Meta Elitist](https://www.youtube.com/@AverageMetalElitist/featured)
+I sometimes like to make low quality guitar videos on YouTube when I have free time that you can find here: [Average Metal Elitist](https://www.youtube.com/@AverageMetalElitist/featured)

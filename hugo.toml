@@ -19,7 +19,7 @@ colorPalette = 'default'
 hideHeader = true
 
 # Intro on main page, content is markdown
-homeIntroTitle = 'Musician who Sometimes Builds Things'
+homeIntroTitle = 'Sleep Deprived Engineering Student'
 homeIntroContent = """
 I'm a mechtronics engineering student who enjoys making projects and composing music. To learn more about my background please read my [about page](/about) and check me out on [LinkedIn](https://www.linkedin.com/in/talha-a-ahmad/). This site is where I plan on showcasing my projects as well as all my socials so you can follow me on my journey.
 """
@@ -44,6 +44,10 @@ url = "https://www.linkedin.com/in/talha-a-ahmad/"
 [[params.social]]
 name = "github"
 url = "https://github.com/bigboichickennugget"
+
+[[params.social]]
+name = "youtube"
+url = "https://www.youtube.com/@AverageMetalElitist"
 
 # Main menu pages
 [[params.menu]]
