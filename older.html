@@ -44,10 +44,11 @@
     <block type="move_down"></block>
     <block type="move_left"></block>
     <block type="move_right"></block>
+    <block type="repeat_loop"></block>
   </xml>
 
   <script>
-    // --- Blockly Setup (Simplified) ---
+    // --- Blockly Setup ---
     // Define a separate block for each direction
     Blockly.Blocks['move_up'] = {
       init: function() { this.appendDummyInput().appendField("move up"); this.setPreviousStatement(true, null); this.setNextStatement(true, null); this.setColour(230); }
@@ -61,6 +62,23 @@
     Blockly.Blocks['move_right'] = {
       init: function() { this.appendDummyInput().appendField("move right"); this.setPreviousStatement(true, null); this.setNextStatement(true, null); this.setColour(20); }
     };
+    
+    // Add loop block
+    Blockly.Blocks['repeat_loop'] = {
+      init: function() {
+        this.appendDummyInput()
+          .appendField("repeat")
+          .appendField(new Blockly.FieldNumber(2, 1, 10), "TIMES")
+          .appendField("times");
+        this.appendStatementInput("DO")
+          .setCheck(null)
+          .appendField("do");
+        this.setPreviousStatement(true, null);
+        this.setNextStatement(true, null);
+        this.setColour(120);
+      }
+    };
+    
     const toolbox = document.getElementById('toolbox');
     const workspace = Blockly.inject('blockly-container', { toolbox: toolbox, scrollbars: true, trashcan: true });
 
@@ -73,7 +91,7 @@
     const boltImg = new Image(); boltImg.src = "bolt.png";
     const tile_wall = 1, tile_path = 0, tile_exit = 2;
     const DIRS = { UP: [0, -1], DOWN: [0, 1], LEFT: [-1, 0], RIGHT: [1, 0] };
-    let TILE_SIZE, maze, WIDTH = 13, HEIGHT = 13, MAX_MOVES_GEN = 25, bot, start, exit, bolts, isRunning = false, collected = [];
+    let TILE_SIZE, maze, WIDTH = 11, HEIGHT = 11, MAX_MOVES_GEN = 20, bot, start, exit, bolts, isRunning = false, collected = [];
     let endGameTimeout = null;
 
     function shuffle(arr) { for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]]}}
@@ -102,16 +120,23 @@
                 if (cmdIndex >= commandList.length) { workspace.highlightBlock(null); checkFinalState(); return; }
                 const command = commandList[cmdIndex];
                 workspace.highlightBlock(command.id);
-                const moveVector = DIRS[command.move];
-                if (!moveVector) { throw new Error(`Unknown direction: ${command.move}`); }
-                const [dx, dy] = moveVector;
-                const nextX = bot.x + dx, nextY = bot.y + dy;
-                if (maze[nextY] && maze[nextY][nextX] !== tile_wall) {
-                    bot.x = nextX; bot.y = nextY;
-                    checkBolt(); drawMaze();
+                
+                if (command.type === 'move') {
+                    const moveVector = DIRS[command.move];
+                    if (!moveVector) { throw new Error(`Unknown direction: ${command.move}`); }
+                    const [dx, dy] = moveVector;
+                    const nextX = bot.x + dx, nextY = bot.y + dy;
+                    if (maze[nextY] && maze[nextY][nextX] !== tile_wall) {
+                        bot.x = nextX; bot.y = nextY;
+                        checkBolt(); drawMaze();
+                        cmdIndex++;
+                        setTimeout(step, 250);
+                    } else { workspace.highlightBlock(null); endGame(false, '❌ You hit a wall!'); }
+                } else if (command.type === 'loop') {
+                    // For loops, we've already expanded them in parseBlockStack
                     cmdIndex++;
-                    setTimeout(step, 250);
-                } else { workspace.highlightBlock(null); endGame(false, '❌ You hit a wall!'); }
+                    setTimeout(step, 100);
+                }
             } catch (e) { console.error(e); endGame(false, `❌ A program error occurred!`); }
         };
         step();
@@ -151,18 +176,29 @@
         resetCurrentLevel();
     }
     
-    // --- SIMPLIFIED BLOCK INTERPRETER ---
+    // --- BLOCK INTERPRETER WITH LOOP SUPPORT ---
     function parseBlockStack(startBlock) {
         let commandList = [];
         let currentBlock = startBlock;
 
         while (currentBlock) {
             if (!currentBlock.disabled) {
-                // We only have move blocks now, so this is much simpler.
                 const blockType = currentBlock.type;
+                
                 if (blockType.startsWith('move_')) {
                     const direction = blockType.split('_')[1].toUpperCase();
-                    commandList.push({ id: currentBlock.id, move: direction });
+                    commandList.push({ id: currentBlock.id, type: 'move', move: direction });
+                } else if (blockType === 'repeat_loop') {
+                    const times = parseInt(currentBlock.getFieldValue('TIMES')) || 1;
+                    const loopBody = currentBlock.getInputTargetBlock('DO');
+                    
+                    // Parse the loop body
+                    const loopCommands = loopBody ? parseBlockStack(loopBody) : [];
+                    
+                    // Expand the loop by repeating the commands
+                    for (let i = 0; i < times; i++) {
+                        commandList.push(...loopCommands);
+                    }
                 }
             }
             currentBlock = currentBlock.getNextBlock();
