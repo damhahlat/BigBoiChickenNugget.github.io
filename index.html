@@ -1,73 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to the Robot Challenge!</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #ade8f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        .container {
-            background-color: white;
-            padding: 40px 60px;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        img.logo {
-            height: 60px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            color: #003049;
-            font-size: 2.5em;
-            margin-top: 0;
-        }
-        p {
-            color: #023e8a;
-            font-size: 1.2em;
-            margin-bottom: 40px;
-        }
-        .button-container {
-            display: flex;
-            gap: 20px;
-        }
-        .grade-button {
-            display: block;
-            background-color: #d62828;
-            color: white;
-            padding: 20px 40px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-size: 1.5em;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .grade-button:hover {
-            background-color: #a31616;
-            transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
-        }
-    </style>
+  <meta charset="utf-8"/>
+  <title>Talha Ahmad — Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <div class="container">
-        <img src="mathnasium.png" alt="Mathnasium Logo" class="logo">
-        <h1>Welcome to the Robot Challenge!</h1>
-        <p>Please select your grade level to begin.</p>
-        <div class="button-container">
-            <a href="younger.html" class="grade-button">Grade 6 or Below</a>
-            <a href="older.html" class="grade-button">Grade 7 or Above</a>
-        </div>
+  <header class="header fade">
+    <div class="nav">
+      <a class="brand" href="index.html"><span class="pixel">▶</span> <strong>TALHA</strong> <span class="muted">AHMAD</span></a>
+      <nav class="links">
+        <a data-href="index.html" href="index.html">Home</a>
+        <a data-href="experience.html" href="experience.html">Experience</a>
+        <a data-href="projects.html" href="projects.html">Projects</a>
+        <a data-href="contact.html" href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="panel reveal">
+      <div class="h1">Hi, I’m Talha.</div>
+      <p class="muted">
+        I'm a Mechatronics Engineering student at McMaster University. I am very passionate about embedded systems, control systems, and DSP development.
+      </p>
+      <div class="menu">
+        <a href="experience.html"><span class="pixel caret">▶</span> Experience</a>
+        <a href="projects.html"><span class="pixel caret">▶</span> Projects</a>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="panel reveal">
+      <div class="section-title">Skills</div>
+      <div class="cards two">
+        <div class="card">
+          <h3>Languages</h3>
+          <div class="badges">
+            <span class="badge">C</span><span class="badge">C++</span><span class="badge">Python</span><span class="badge">Java</span>
+            <span class="badge">MbedOS</span><span class="badge">RTOS</span><span class="badge">Matlab</span><span class="badge">Maple</span>
+            <span class="badge">JavaScript</span><span class="badge">Bash</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Developer Tools</h3>
+          <div class="badges">
+            <span class="badge">Git</span><span class="badge">Docker</span><span class="badge">Arduino</span>
+            <span class="badge">STM32Cube</span><span class="badge">KeilStudio</span><span class="badge">Linux</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Software</h3>
+          <div class="badges">
+            <span class="badge">KiCad</span><span class="badge">Altium</span><span class="badge">Inventor</span>
+            <span class="badge">AutoCAD</span><span class="badge">Fusion 360</span><span class="badge">Multisim</span>
+            <span class="badge">Ansys Granta Edu</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests -->
+    <section class="panel reveal">
+      <div class="section-title">Interests</div>
+      <div class="shelf">
+        <div class="card">
+          <h3>Music I loop</h3>
+          <div class="chips">
+            <span class="chip">Children of Bodom</span>
+            <span class="chip">Nobuo Uematsu</span>
+            <span class="chip">Mors Principium Est</span>
+            <span class="chip">The Black Dahlia Murder</span>
+            <span class="chip">Periphery</span>
+            <span class="chip">Obscura</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Games I love</h3>
+          <div class="chips">
+            <span class="chip">Hollow Knight</span>
+            <span class="chip">Silksong (<s>manifesting</s>)</span>
+            <span class="chip">Final Fantasy X</span>
+            <span class="chip">Final Fantasy VII (original >>> remake)</span>
+            <span class="chip">Persona 5</span>
+            <span class="chip">Persona 4</span>
+            <span class="chip">Chrono Trigger</span>
+            <span class="chip">Cyberpunk 2077</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Books</h3>
+          <div class="chips">
+            <span class="chip">The Stranger (Camus)</span>
+            <span class="chip">Brave New World</span>
+            <span class="chip">1984</span>
+            <span class="chip">Crime and Punishment</span>
+            <span class="chip">No Longer Human</span>
+            <span class="chip">Don Quixote</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Manga</h3>
+          <div class="chips">
+            <span class="chip">Vagabond</span>
+            <span class="chip">Berserk</span>
+            <span class="chip">Gintama</span>
+            <span class="chip">20th Century Boys</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
